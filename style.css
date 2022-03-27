@@ -1,4 +1,317 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+        "hd hd"
+        "lb1 img1"
+        "ln1 ln1"
+        "lb2 fb2"
+        "ln2 ln2"
+        "img3 rb3"
+        "ln3 ln3";
+    gap: 0.5%;
+    margin: 1% 1%;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.left_block1 {
+    grid-area: lb1;
+}
+
+.img_block1 {
+    grid-area: img1;
+    top: -69.27px;
+}
+
+.line1 {
+    grid-area: ln1;
+}
+
+.left_block2 {
+    grid-area: lb2;
+
+}
+
+.right_block2 {
+    grid-area: fb2;
+}
+
+.line2 {
+    grid-area: ln2;
+}
+
+.img_block3 {
+    grid-area: img3;
+    left: -66px;
+}
+
+.right_block3 {
+    grid-area: rb3;
+    width: 80%;
+}
+
+.line3 {
+    grid-area: ln3;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* размещение заголовка и лого */
+
+.grid_title {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (9, 1fr);
+    grid-template-areas:
+        "t t t t t t t t t"
+        ". . . lg ."
+        ". . . noi.";
+    justify-content: start;
+}
+
+.logo {
+    grid-area: lg;
+    z-index: 1;
+    margin-left: 6%;
+    margin-top: -5%;
+}
+
+.title {
+    grid-area: t;
+    z-index: 0;
+}
+
+.noi {
+    grid-area: noi;
+    z-index: 2;
+    margin-left: 7.5%;
+    margin-top: -2.3%;
+}
+
+/* флекс-меню */
+.mainmenu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 2px;
+}
+
+.mainmenu a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.mainmenu li:hover {
+    background: rgb(58, 59, 57);
+    color: #fff;
+    transition: .5s;
+    border-radius: 100px;
+
+}
+
+.mainmenu li {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    margin-right: 1%;
+    padding: 0.5%;
+}
+
+.home {
+    background-color: #000000;
+}
+
+.home a {
+    color: #fff;
+}
+
+.sign_up {
+    background-color: #99FF91;
+}
+
+.link2 a,
+.sign_up a {
+    color: #000000;
+}
+
+/* флекс-блоки 1,2,3 */
+
+.flex123 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 1%;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 36px;
+    width: 80%;
+    padding: 5px 5px;
+}
+
+.flex1 {
+    margin: 1%;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 36px;
+    width: 80%;
+    padding: 5px 5px;
+}
+
+
+/* типографика основного текста страницы */
+h1,
+h2,
+.onetext,
+h3,
+h4,
+.urmeaza,
+.paragraph,
+.inscrie {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 98px;
+    line-height: 100%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.onetext {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    color: #000000;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.urmeaza {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.inscrie {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+
+/* кнопки и формы */
+.button_find,
+.mai_mult_button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 1% 2%;
+    margin-right: 3%;
+}
+
+.button_find {
+    background: #99FF91;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+
+.mai_mult_button {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+}
+
+.inter_now {
+    background: linear-gradient(180deg, #99FF91 0%, #61D1F2 100%);
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 36px;
+    width: 80%;
+    height: 80%;
+    text-align: left;
+    padding-left: 4%;
+    position: relative;
+    margin-left: 5%;
+}
+
+.textarea {
+    font-family: 700 14px 'Roboto', sans-serif;
+    width: 80%;
+    height: 35%;
+    opacity: 0.2;
+    display: inline-block;
+    overflow-wrap: break-word;
+    resize: auto;
+    margin-bottom: 1%;
+}
+
+.maideparte {
+    background: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 3% 36%;
+    position: relative;
+}
+
+
 body {
     background-color: #CACACA;
-    font-family: 'Roboto', sans-serif;
+
 }

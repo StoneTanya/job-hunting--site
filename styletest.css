@@ -1,0 +1,29 @@
+.grid_title {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (9, 1fr);
+    border: 1px red solid;
+    grid-template-areas:
+        "t t t t t t t t t"
+        ". . . lg ."
+        ". . . noi.";
+}
+
+.logo {
+    grid-area: lg;
+    z-index: 1;
+    margin-left: 6%;
+    margin-top: -5%;
+}
+
+.title {
+    grid-area: t;
+    z-index: 0;
+}
+
+.noi {
+    grid-area: noi;
+    z-index: 2;
+    margin-left: 7.5%;
+    margin-top: -2.3%;
+}
