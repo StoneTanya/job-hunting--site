@@ -1,18 +1,18 @@
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(10, auto);
     grid-template-areas:
-        "hd hd"
-        "lb1 img1"
-        "ln1 ln1"
-        "lb2 fb2"
-        "ln2 ln2"
-        "img3 rb3"
-        "ln3 ln3";
-    gap: 0.5%;
-    margin: 1% 1%;
+        "hd hd hd hd"
+        "lb1 img1 img1 img1"
+        "ln1 ln1 ln1 ln1"
+        "lb2 fb2 fb2 fb2"
+        "ln2 ln2 ln2 ln2"
+        "img3 img3 rb3 rb3"
+        "ln3  ln3 ln3 ln3";
+    row-gap: 0.5vh;
+    margin: 0 1%;
 }
 
 .header {
@@ -34,11 +34,11 @@
 
 .left_block2 {
     grid-area: lb2;
-
 }
 
 .right_block2 {
     grid-area: fb2;
+    margin-top: 5%;
 }
 
 .line2 {
@@ -52,23 +52,68 @@
 
 .right_block3 {
     grid-area: rb3;
-    width: 80%;
+    margin-right: 4%;
 }
 
 .line3 {
     grid-area: ln3;
 }
 
+/* флекс-блоки, начиная с 4 секции */
+.flex_section4, .flex_section5, .flex_section6 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+.left_block5, .right_block5 {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 36px;
+    padding: 3% 3%;
+    margin: 2%;
+    box-sizing: 20vw;
+}
+
+.left_block4 {
+    flex-basis: 35vw;
+    margin-left: 2vw;
+}
+
+.right_block4 {
+    margin-right: 5vw;
+}
+
 .line1,
 .line2,
-.line3 {
+.line3,
+.line4 {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-/* размещение заголовка и лого */
+/* футер */
 
+.flexfooter1 {
+    display: flex;
+    height: 30vh; 
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 3%;
+}
+.flexfooter2 {
+    display: flex;
+    height: 10vh;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+/* размещение заголовка и лого */
 .grid_title {
     display: grid;
     width: 100%;
@@ -99,26 +144,35 @@
     margin-top: -2.3%;
 }
 
-/* флекс-меню */
+/* флекс-меню  и флекс-футер  */
 .mainmenu {
     display: flex;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: flex-end;
     list-style: none;
-    padding: 2px;
+}
+
+.menu, .documents  {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+}
+
+.mainmenu a, .menu a {
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    
 }
 
 .mainmenu a {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-style: normal;
-    font-weight: 700;
     font-size: 19px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
+}
+
+.menu a {
+    font-size: 24px;
+    padding-left: 5%;
 }
 
 .mainmenu li:hover {
@@ -126,15 +180,15 @@
     color: #fff;
     transition: .5s;
     border-radius: 100px;
-
 }
 
-.mainmenu li {
+.mainmenu li, .menu li {
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 100px;
     margin-right: 1%;
-    padding: 0.5%;
+    margin-bottom: 2%;
+    padding: 1% 1%;
 }
 
 .home {
@@ -145,13 +199,31 @@
     color: #fff;
 }
 
-.sign_up {
+.sign_up, .sign_up1  {
     background-color: #99FF91;
 }
 
 .link2 a,
-.sign_up a {
+.sign_up1 a {
     color: #000000;
+}
+
+.documents a {
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0.2px;
+text-decoration-line: underline;
+padding: 3%;
+color: #000000;
+}
+
+.slogan_block {
+    flex: 0 1 40% ;
+}
+
+.menu {
+    flex: 0 1 20%;
 }
 
 /* флекс-блоки 1,2,3 */
@@ -184,56 +256,70 @@ h2,
 .onetext,
 h3,
 h4,
-.urmeaza,
-.paragraph,
-.inscrie {
+h5,
+.inscrie, 
+.slogan, 
+address, .documents a, .mainmenu a, .menu a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 98px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150px;
     line-height: 100%;
     letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: #000000;
 }
 
 .onetext {
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
-    text-transform: uppercase;
-    color: #000000;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 98px;
+    line-height: 100%;
+    letter-spacing: 2.8px;
 }
 
 h3 {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 120%;
-    color: #000000;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 0.5px;
+    margin: 0%;
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 120%;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
     letter-spacing: 0.2px;
+    margin: 0%;
 }
 
-.urmeaza {
+h5 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 120%;
+}
+.urmeaza, .paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+}
+.urmeaza {
+    font-size: 28px;
     line-height: 120%;
 }
 
 .paragraph {
-    font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #000000;
 }
 
 .inscrie {
@@ -243,36 +329,56 @@ h4 {
     text-transform: uppercase;
 }
 
+.slogan {
+    font-weight: 700;
+font-size: 36px;
+line-height: 120%;
+}
 
 /* кнопки и формы */
-.button_find,
-.mai_mult_button {
+.button_green,
+.mai_mult_button, .contact_us, .contact_us_white, .contact_us_violet, .sign_up {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 21px;
     line-height: 90%;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     padding: 1% 2%;
     margin-right: 3%;
 }
 
-.button_find {
+.button_green,
+.mai_mult_button, .contact_us, .contact_us_white, .contact_us_violet {
+    font-size: 21px;
+}
+
+.button_green, .sign_up {
     background: #99FF91;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button_green, .mai_mult_button, .contact_us_white, .contact_us_violet, .contact_us {
     border-radius: 100px;
 }
 
-.mai_mult_button {
+.sign_up {
+    font-size: 36px;
+}
+
+.mai_mult_button, .contact_us_white {
     background: #FFFFFF;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 100px;
+
+}
+.contact_us {
+    background: #FFE8A3;
+
+}
+.contact_us_violet {
+    background: #B3B5FF;
 }
 
 .inter_now {
@@ -311,7 +417,7 @@ h4 {
 }
 
 
+
 body {
     background-color: #CACACA;
-
 }
