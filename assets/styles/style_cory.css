@@ -43,13 +43,15 @@ header {
   border: 1px solid red;
 }
 
-.section1::after, .section2::after, .section3::after {
+.section1::after,
+.section2::after,
+.section3::after {
   content: "";
   position: absolute;
   border: 1px solid black;
   width: 100%;
 
-top: 103.7%;
+  top: 103.7%;
 }
 
 .section__block_text {
@@ -60,13 +62,13 @@ top: 103.7%;
 /* секция 3 */
 .section3__block_image {
   border: 1px solid red;
-  flex-basis: 60.5%;
+  flex-basis: 62%;
   align-self: end;
 }
 
 .section3__image {
-  width: 88.5%;
-  margin-top: 8%;
+  width: 89%;
+  margin-top: 6%;
   margin-bottom: 3%;
 }
 
@@ -86,13 +88,13 @@ top: 103.7%;
 
 .section4__block_image {
   border: 1px solid red;
-  flex-basis: 59.8%;
+  flex-basis: 60%;
   align-self: end;
 }
 
 .section4__image {
   width: 97.5%;
-  margin-top: 5.5%;
+  margin-top: 3.5%;
   border: 1px solid red;
 }
 
@@ -104,7 +106,7 @@ top: 103.7%;
   border: 1px solid red;
 }
 
-.section4_outlined {
+.outlined {
   border: 1px solid #000000;
   flex-basis: 48.7%;
   border-radius: 36px;
@@ -112,6 +114,7 @@ top: 103.7%;
   margin: 0.4% 0.4% 2% 0%;
 }
 
+/* секция 2 */
 .section2 {
   margin-bottom: 2%;
 }
@@ -123,7 +126,6 @@ top: 103.7%;
 
 .section2__form {
   flex-basis: 55.5%;
-  border: 1px solid red;
 }
 
 .flex123 {
@@ -206,7 +208,7 @@ top: 103.7%;
 }
 
 .grid_title::after {
-  content: '';
+  content: "";
   position: absolute;
   border: 1px solid black;
   width: 91%;
@@ -288,7 +290,7 @@ li {
 }
 
 li:last-child {
-  background-color: #99ff91;
+  background-color: rgb(153, 255, 145);
   font-size: 24px;
 }
 
@@ -339,7 +341,7 @@ h5,
 address,
 .documents a,
 .mainmenu a,
-.menu a, 
+.menu a,
 .maideparte {
   text-transform: uppercase;
 }
@@ -371,14 +373,7 @@ address,
   overflow: auto;
   animation: scroll 20s linear infinite;
 }
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 20px));
-  }
-}
+
 #CAUTAREA {
   border: 1px solid red;
 
