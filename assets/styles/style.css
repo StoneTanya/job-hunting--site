@@ -25,7 +25,24 @@ main {
 }
 
 header {
-  margin-bottom: 3.5vh;
+  margin-bottom: 1.8vh;
+}
+header::after {
+  content: "";
+  position: absolute;
+  border: 1px solid black;
+  width: 90.5%;
+  margin-top: 0.8%;
+  margin-left: 2.1%;
+}
+
+.head_title {
+  width: 100vw;
+  margin-top: -1.2%;
+}
+.head_title img {
+  padding-left: 3.9%;
+  width: 88%;
 }
 
 .section {
@@ -65,14 +82,6 @@ header {
   margin: 0 0 7.6% 0;
   font-weight: 400;
 }
-.section__block_text h2 {
-  font-weight: 700;
-  font-size: 98px;
-  line-height: 98px;
-  letter-spacing: 2.8px;
-  margin-bottom: 1.6%;
-  margin-top: 4.1%;
-}
 .section__block_text h3 {
   font-weight: 700;
   font-size: 72px;
@@ -96,6 +105,15 @@ header {
 }
 
 /* секция 1 */
+.section1 div h2 {
+  font-weight: 700;
+  font-size: 98px;
+  line-height: 98px;
+  letter-spacing: 2.8px;
+  margin-bottom: 1.2%;
+  margin-top: 4.1%;
+  padding-left: 0.2%;
+}
 .section1 div button {
   font-weight: 700;
   line-height: 18px;
@@ -141,8 +159,8 @@ header {
   border: 1px solid #333333;
   border-radius: 36px;
   text-align: left;
-  padding: 0.5% 6.5%;
-  margin: 3.5% 0.5% 1% 9.5%;
+  padding: 0% 6.4%;
+  margin: 3.5% 0.6% 1% 9.5%;
 }
 .section2__form form textarea {
   font-family: 700 14px "Roboto", sans-serif;
@@ -162,13 +180,13 @@ header {
   border-radius: 10px;
   color: #fff;
   text-transform: uppercase;
-  padding: 8.5% 38.5%;
-  margin: 4.9% 0% 8% 0%;
+  padding: 8.6% 38.5%;
+  margin: 4.4% 0% 8% 0.3%;
 }
 .section2__form form .form__paragraph {
   font-size: 20px;
   line-height: 27px;
-  margin-top: 0;
+  margin-top: 0.6%;
   margin-bottom: 5%;
 }
 .section2__form form .inscrie {
@@ -189,36 +207,44 @@ header {
   margin-bottom: 2.9%;
   padding-bottom: 0.9%;
 }
+.flex123 div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
 .flex123 div .flex123__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 25.2px;
   letter-spacing: 0.2px;
-  padding: 0% 21% 0% 4.2%;
+  padding: 0% 21% 0% 4.4%;
+  margin-top: 8%;
   margin-bottom: 0;
 }
 .flex123 div .flex123__paragraph {
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
-  padding: 0% 12% 0% 5%;
-  margin-bottom: 4%;
+  padding: 0% 17.5% 0% 4.4%;
+  margin-bottom: 5%;
 }
 
 .flex123__imgWrapper {
-  padding-left: 2.7%;
-  padding-top: 2.9%;
-  width: 63%;
-}
-.flex123__imgWrapper img {
-  width: 100%;
+  padding-left: 2.9%;
+  padding-top: 1.9%;
+  width: 64%;
 }
 
 .flex3 {
-  margin-bottom: 3.5%;
+  margin-bottom: 0.3%;
 }
 .flex3 .flex123__imgWrapper {
-  width: 74%;
+  width: 73%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.flex3 .flex123__paragraph {
+  padding-right: 0%;
 }
 
 /* секция 3 */
@@ -353,48 +379,6 @@ header {
   width: 103.5%;
   margin-top: 0.2%;
   margin-left: 0.1%;
-}
-
-/* размещение заголовка и лого */
-.grid_title {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat 2, 1fr;
-  grid-template-areas: "t t " ".lg." ".noi.";
-  justify-content: start;
-}
-
-.grid_title::after {
-  content: "";
-  position: absolute;
-  border: 1px solid black;
-  width: 91%;
-  margin-top: 24.5vh;
-  margin-left: 2vw;
-}
-
-.logo {
-  grid-area: lg;
-  z-index: 1;
-  margin-left: 9%;
-  margin-top: -4%;
-}
-
-.title {
-  grid-area: t;
-  width: 100%;
-  z-index: 0;
-  margin-left: 5%;
-}
-
-.title svg {
-  margin-right: 10px;
-}
-
-.noi {
-  grid-area: noi;
-  z-index: 2;
-  margin-left: 11%;
 }
 
 /* футер */
@@ -543,9 +527,8 @@ header {
 li {
   border: 1px solid #000000;
   margin-right: 1.1%;
-  margin-bottom: 2%;
-  margin-top: 1%;
-  padding: 0.3% 0.8% 0.3% 0.9%;
+  margin-top: 0.95%;
+  padding: 0.4% 0.8% 0.3% 0.9%;
 }
 li:last-child {
   background-color: rgb(153, 255, 145);
@@ -687,7 +670,7 @@ address,
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   padding: 0.6% 5.8% 0.5% 4%;
   font-size: 36px;
-  background: #99ff91;
+  background: rgb(153, 255, 145);
 }
 
 .button_green {
@@ -700,6 +683,6 @@ address,
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   padding: 0.6% 5.8% 0.5% 4%;
   border-radius: 100px;
-  background: #99ff91;
+  background: rgb(153, 255, 145);
   font-size: 21px;
 }/*# sourceMappingURL=style.css.map */
