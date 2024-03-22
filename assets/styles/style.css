@@ -36,11 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
-  align-items: start;
-  /*подумать, нужно ли свойство*/
-  margin: 0% 7% 0% 2%;
-  padding-bottom: 2.2%;
-  border: 1px solid red;
+  margin: 0% 7% 2.9% 2%;
 }
 
 .section1::after,
@@ -49,33 +45,12 @@ header {
   content: "";
   position: absolute;
   border: 1px solid black;
-  width: 100%;
-  top: 102.8%;
-}
-
-.section1 div button {
-  font-weight: 700;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  border: 1px solid #000000;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
-  font-size: 21px;
-  background: #99ff91;
-  border-radius: 100px;
-}
-.section1 div .urmeaza1 {
-  font-size: 28px;
-  line-height: 33px;
-  margin: 1.1% 0% 3.5% 0;
-  letter-spacing: 0px;
+  width: 99.7%;
+  top: 108.9%;
 }
 
 .section__block_text {
   flex-basis: 48%;
-  border: 1px solid red;
 }
 .section__block_text .paragraph {
   font-size: 18px;
@@ -94,9 +69,9 @@ header {
   font-weight: 700;
   font-size: 98px;
   line-height: 98px;
-  letter-spacing: 3.9px;
-  margin-bottom: 0;
-  margin-top: 4%;
+  letter-spacing: 2.8px;
+  margin-bottom: 1.6%;
+  margin-top: 4.1%;
 }
 .section__block_text h3 {
   font-weight: 700;
@@ -120,17 +95,48 @@ header {
   letter-spacing: 0.2px;
 }
 
+/* секция 1 */
+.section1 div button {
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  padding: 0.6% 5.8% 0.5% 4%;
+  font-size: 21px;
+  background: rgb(153, 255, 145);
+  border-radius: 100px;
+  padding-right: 3.8%;
+  padding-left: 3.3%;
+}
+.section1 div .urmeaza {
+  font-size: 28px;
+  line-height: 33px;
+  margin: 0% 0% 3.1% 0;
+  letter-spacing: 0px;
+}
+.section1 .section1__block_image {
+  align-self: start;
+  flex-basis: 50%;
+}
+.section1 .section1__block_image img {
+  width: 85%;
+  margin-top: 0%;
+  margin-left: 14%;
+}
+
 /* секция 2 */
 .section2__text {
   flex-basis: 41.8%;
-  margin-bottom: 3%;
+  margin-bottom: 1.7%;
 }
 
 .section2__form {
   flex-basis: 55.5%;
 }
 .section2__form form {
-  /* inter_now */
   background: linear-gradient(180deg, #99ff91 0%, #61d1f2 100%);
   border: 1px solid #333333;
   border-radius: 36px;
@@ -222,18 +228,18 @@ header {
 }
 .section3__block_image img {
   position: absolute;
-  width: 93%;
-  padding-top: 7%;
-  margin-left: -4%;
+  width: 92.7%;
+  padding-top: 9.8%;
+  margin-left: -4.1%;
 }
 
 .section3_text {
   flex-basis: 38.9%;
-  margin-top: 1%;
+  margin-top: 2.8%;
 }
 .section3_text button {
-  margin: 7.1% 2.6% 14% 0;
-  padding: 0.5% 5.5%;
+  margin: 7.1% 2.6% 12% 0;
+  padding: 0.6% 5.5%;
 }
 .section3_text .paragraph {
   margin-right: 0;
@@ -252,10 +258,10 @@ header {
   border-radius: 36px;
   height: 86vh;
   padding: 4.6% 4.8%;
-  margin: 0.4% 0.4% 0% 0%;
+  margin: 0.2% 0.4% 0% 0%;
 }
 .section4 .outlined .mai_mult_button {
-  margin-top: 2.7%;
+  margin-top: 2.9%;
 }
 .section4 .outlined .contact_us_white {
   font-weight: 700;
@@ -265,8 +271,8 @@ header {
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
-  margin-top: 0.1%;
+  padding: 0.6% 5.8% 0.5% 4%;
+  margin-top: 0.5%;
   margin-left: 1.6%;
   padding: 1% 5% 1% 3%;
 }
@@ -288,14 +294,14 @@ header {
 .section4__block_image img {
   width: 103.5%;
   position: absolute;
-  margin-top: 1.6%;
-  margin-left: -5.7%;
+  margin-top: 2%;
+  margin-left: -5.9%;
 }
 
 .section4_text {
   flex-basis: 43%;
   align-self: flex-start;
-  margin-top: 0.3%;
+  margin-top: 0.5%;
   margin-bottom: 9.2%;
 }
 .section4_text h5 {
@@ -307,33 +313,36 @@ header {
   margin-right: 7%;
 }
 .section4_text .section__buttons {
-  margin-top: 6.8%;
+  margin-top: 6.7%;
 }
 
 /* секция 5 */
 .section5__text {
   flex-basis: 38.6%;
   align-self: flex-start;
-  margin-top: 0.4%;
 }
 .section5__text h5 {
   margin-top: 0.8%;
   margin-bottom: 5.8%;
 }
 .section5__text h3 {
-  margin-bottom: 4.2%;
+  margin-bottom: 4%;
 }
 .section5__text .paragraph {
   margin-right: 0%;
-  margin-bottom: 2.7%;
+  margin-bottom: 2.5%;
   margin-top: 0;
 }
 .section5__text :nth-child(3) {
   margin-right: 5%;
 }
+.section5__text :nth-child(5) {
+  margin-right: 5%;
+  margin-bottom: 2.8%;
+}
 .section5__text :nth-child(6) {
   margin-right: 5%;
-  margin-bottom: 7.4%;
+  margin-bottom: 7.5%;
 }
 
 .section5__block_image {
@@ -342,7 +351,8 @@ header {
 }
 .section5__block_image img {
   width: 103.5%;
-  margin-top: 1.2%;
+  margin-top: 0.2%;
+  margin-left: 0.1%;
 }
 
 /* размещение заголовка и лого */
@@ -388,13 +398,15 @@ header {
 }
 
 /* футер */
-.flexfooter1 {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
+.footer {
+  display: grid;
+  grid-template-columns: 17vw 17vw 10.2vw 15vw 14vw 19vw;
+  grid-template-rows: 75% 37%;
+  grid-template-areas: "slogan slogan . menu menu doc" ". . . address address address";
+  row-gap: 1.9vh;
+  justify-content: start;
 }
-.flexfooter1::before {
+.footer::before {
   content: "";
   position: absolute;
   border: 1px solid black;
@@ -402,25 +414,92 @@ header {
   margin-bottom: 30vh;
   margin-top: 0vh;
 }
-.flexfooter1 ul {
-  flex: 0 1 20%;
+.footer .menu {
+  grid-area: menu;
 }
-.flexfooter1 .flexfooter1__slogan_block {
-  flex: 0 1 40%;
+.footer .menu a {
+  line-height: 36px;
 }
-.flexfooter1 .flexfooter1__slogan_block p {
+.footer .menu :nth-child(1) a,
+.footer .menu :nth-child(5) a {
+  font-size: 30px;
+}
+.footer .menu :nth-child(5) a,
+.footer .menu :nth-child(2) a {
+  font-size: 36px;
+}
+.footer .menu :nth-child(3) a,
+.footer .menu :nth-child(4) a {
+  font-size: 34px;
+}
+.footer .menu li {
+  border-radius: 50px;
+  padding: 1.4% 5% 1.4% 4.7%;
+  margin-bottom: 1.5%;
+}
+.footer .menu li:last-child {
+  padding-right: 12%;
+}
+.footer .footer_slogan_block {
+  grid-area: slogan;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 6.3%;
+}
+.footer .footer_slogan_block p {
   font-weight: 700;
   font-size: 36px;
-  line-height: 120%;
+  line-height: 43.2px;
+  text-transform: uppercase;
+  margin-bottom: 3%;
 }
-
-.flexfooter2 {
+.footer .footer_slogan_block button {
+  padding: 0.7% 7%;
+}
+.footer .documents {
+  grid-area: doc;
+}
+.footer .documents a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.2px;
+  text-decoration-line: underline;
+  padding: 3%;
+  color: #000000;
+}
+.footer .address {
+  grid-area: address;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 22.4px;
+  padding-left: 5.5%;
+}
+.footer .address .address_details {
+  margin-bottom: 4%;
+  padding-right: 10%;
+}
+.footer .address span {
+  font-size: 12px;
+}
+.footer .menu,
+.footer .documents {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
+  flex-flow: column nowrap;
+  list-style: none;
+  align-items: flex-start;
+  margin-top: 14.2%;
+}
+.footer .documents {
+  margin-top: 21%;
+}
+.footer .documents a {
+  margin-top: 0;
 }
 
-/* флекс-меню  и флекс-футер  */
+/* меню  (в хэдэр и футер)  */
 .mainmenu {
   display: flex;
   flex-flow: row nowrap;
@@ -428,29 +507,30 @@ header {
   list-style: none;
   margin-right: 6.5%;
 }
-
-.menu,
-.documents {
-  display: flex;
-  flex-flow: column nowrap;
-  list-style: none;
+.mainmenu li {
+  border-radius: 100px;
+}
+.mainmenu :nth-child(3) a,
+.mainmenu :nth-child(4) a {
+  font-size: 21px;
+}
+.mainmenu :nth-child(3) {
+  margin-right: 1%;
+}
+.mainmenu :nth-child(4) {
+  margin-right: 1.1%;
 }
 
 .mainmenu a,
 .menu a {
   text-decoration: none;
   font-weight: 700;
-  line-height: 120%;
-  letter-spacing: 0.2px;
 }
 
 .mainmenu a {
-  font-size: 21px;
-}
-
-.menu a {
-  font-size: 24px;
-  padding-left: 5%;
+  font-size: 23px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .mainmenu li:hover {
@@ -462,15 +542,16 @@ header {
 
 li {
   border: 1px solid #000000;
-  border-radius: 100px;
-  margin-right: 1%;
+  margin-right: 1.1%;
   margin-bottom: 2%;
   margin-top: 1%;
-  padding: 4px 15px;
+  padding: 0.3% 0.8% 0.3% 0.9%;
 }
 li:last-child {
   background-color: rgb(153, 255, 145);
   font-size: 24px;
+  margin-right: 1%;
+  padding-right: 1.5%;
 }
 li:last-child a {
   font-size: 24px;
@@ -483,16 +564,6 @@ li:first-child a {
   font-size: 19px;
 }
 li a {
-  color: #000000;
-}
-
-.documents a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0.2px;
-  text-decoration-line: underline;
-  padding: 3%;
   color: #000000;
 }
 
@@ -520,15 +591,15 @@ li a {
   line-height: 120%;
   letter-spacing: 2.8px;
   display: inline-block;
-  margin-top: 12vh;
-  margin-bottom: 4vh;
+  margin-top: 11vh;
+  margin-bottom: 3.5vh;
   overflow: auto;
   animation: scroll 20s linear infinite;
 }
 
 /* типографика*/
 #CAUTAREA {
-  margin-top: 15.3%;
+  margin-top: 15.6%;
   font-weight: 400;
   font-size: 24px;
   line-height: 28.8px;
@@ -557,10 +628,13 @@ address,
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
+  padding: 0.6% 5.8% 0.5% 4%;
   font-size: 21px;
   border-radius: 100px;
   background: #ffe8a3;
+  padding-right: 2.1%;
+  padding-left: 5.1%;
+  margin-right: 2%;
 }
 .contact_us_white {
   font-weight: 700;
@@ -570,7 +644,7 @@ address,
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
+  padding: 0.6% 5.8% 0.5% 4%;
   background: #ffffff;
   border-radius: 100px;
   font-size: 21px;
@@ -583,7 +657,7 @@ address,
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
+  padding: 0.6% 5.8% 0.5% 4%;
   background: #b3b5ff;
   border-radius: 100px;
   font-size: 21px;
@@ -597,7 +671,7 @@ address,
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
+  padding: 0.6% 5.8% 0.5% 4%;
   background: #ffffff;
   border-radius: 100px;
   font-size: 20px;
@@ -611,7 +685,7 @@ address,
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
+  padding: 0.6% 5.8% 0.5% 4%;
   font-size: 36px;
   background: #99ff91;
 }
@@ -624,7 +698,7 @@ address,
   color: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-  padding: 0.5% 5.8% 0.5% 4%;
+  padding: 0.6% 5.8% 0.5% 4%;
   border-radius: 100px;
   background: #99ff91;
   font-size: 21px;
